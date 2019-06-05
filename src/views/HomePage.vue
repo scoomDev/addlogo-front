@@ -2,7 +2,7 @@
     <div>
         <h1 v-if="getUsername">Hi {{ getUsername }}!</h1>
         <brand-logo-list></brand-logo-list>
-        <router-link to="/login">Logout</router-link>
+        <router-link to="/admin/login">Logout</router-link>
     </div>
 </template>
 

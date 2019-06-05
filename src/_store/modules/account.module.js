@@ -27,7 +27,7 @@ const actions = {
                     localStorage.setItem('token', JSON.stringify(data.token));
                 }
                 commit('loginSuccess', user);
-                router.push('/');
+                router.push('/admin');
             }, error => {
                 commit('loginFailure', error);
                 dispatch('alert/error', error, { root: true });

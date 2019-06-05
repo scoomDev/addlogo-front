@@ -25,7 +25,8 @@ function login(username, password)
 
 function logout()
 {
-    localStorage.removeItem('user')
+    localStorage.removeItem('username');
+    localStorage.removeItem('token');
 }
 
 export const userService = {
